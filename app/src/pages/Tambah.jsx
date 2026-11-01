@@ -4,8 +4,13 @@ const AWAL = { judul: '', kategori: 'Komputer', kodeAlat: '', jumlah: 0, kondisi
 export default function Tambah() {
     const [form, setForm] = useState(AWAL)
     const ubah = (e) => setForm({ ...form, [e.target.name]: e.target.value })
+    const simpan = (e) => {
+    e.preventDefault()
+    console.log('Data yang akan disimpan:', form)
+  }
+
   return (
-    <form>
+    <form onSubmit={simpan} noValidate>
       <h1>Tambah Barang</h1>
 
       <label htmlFor="judul">Judul</label>
