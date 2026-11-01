@@ -32,7 +32,7 @@ const konfirmasiHapus = () => {
       <dl>
         <dt>Kategori</dt>
         <dd>{item.kategori}</dd>
-        <dt>Kode Barang</dt>
+        <dt>Kode Alat</dt>
         <dd>{item.kodeAlat}</dd>
         <dt>Jumlah Barang</dt>
         <dd>{item.jumlah}</dd>
