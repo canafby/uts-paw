@@ -3,11 +3,19 @@ const AWAL = { judul: '', kategori: 'Komputer', kodeAlat: '', jumlah: 0, kondisi
 
 export default function Tambah() {
     const [form, setForm] = useState(AWAL)
+    const [galat, setGalat] = useState('')
+
     const ubah = (e) => setForm({ ...form, [e.target.name]: e.target.value })
+    
     const simpan = (e) => {
     e.preventDefault()
+   if (form.judul.trim().length < 3) {
+      setGalat('Judul wajib diisi, minimal 3 karakter.')
+      return
+    }
+    setGalat('')
     console.log('Data yang akan disimpan:', form)
-  }
+}
 
   return (
     <form onSubmit={simpan} noValidate>
@@ -15,6 +23,7 @@ export default function Tambah() {
 
       <label htmlFor="judul">Judul</label>
       <input id="judul" name="judul" value={form.judul} onChange={ubah} />
+      {galat && <p style={{ color: 'red' }}>{galat}</p>}
       <label htmlFor="kodeAlat">Kode Barang</label>
       <input id="kodeAlat" name="kodeAlat" value={form.kodeAlat} onChange={ubah} />
       <label htmlFor="kategori">Kategori</label>
