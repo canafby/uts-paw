@@ -65,17 +65,31 @@ Ganti seluruh isi berkas ini dengan dokumentasi aplikasimu (butir rubrik A4). Ke
 ```markdown
 # Nama Aplikasi
 
-Nama: ...
-NIM: ...
-Kelas: ...
-Tema: ...
-Deployment: https://USERNAME.github.io/uts-paw/
+Nama: CANIA FEBRIYANTI
+NIM: 124140153
+Kelas: RB
+Tema: Inventaris Laboratorium
+Deployment: https://github.com/canafby/uts-paw.git
 
-![Tangkapan layar beranda](docs/beranda.png)
+![Tangkapan layar beranda](app/image/beranda.png)
 
 ## Fitur
 
-- ...
+- Beranda untuk menampilkan halaman utama aplikasi.
+
+- Koleksi untuk menampilkan daftar inventaris barang.
+
+- Detail Barang untuk melihat informasi lengkap barang.
+
+- Tambah Barang untuk menambahkan data inventaris.
+
+- Hapus Barang untuk menghapus data koleksi.
+
+- Statistik untuk menampilkan jumlah barang berdasarkan kategori.
+
+- LocalStorage untuk menyimpan data di browser.
+
+- Navigasi menggunakan React Router.
 
 ## Menjalankan secara lokal
 
@@ -85,5 +99,20 @@ npm run dev
 
 ## Konsep React yang dipakai
 
-- ...
-```
+- Components: Membagi aplikasi menjadi beberapa komponen dan halaman.
+
+- useState: Mengelola data dan state formulir.
+
+- useEffect: Menjalankan proses pemuatan data.
+
+- Custom Hooks: Menggunakan useLocalStorage dan useKoleksi.
+
+- Context API: Membagikan data koleksi menggunakan KoleksiContext dan KoleksiProvider.
+
+- React Router: Mengatur navigasi antarhalaman.
+
+- LocalStorage: Menyimpan data barang di browser.
+
+- Fetch API: Mengambil data awal dari koleksi.json.
+
+- Form Validation: Memvalidasi input sebelum data disimpan.
