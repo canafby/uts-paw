@@ -1,4 +1,9 @@
+import useKoleksi from '../hooks/useKoleksi.js'
+
 export default function Statistik() {
+  const { items } = useKoleksi()
+  const perKategori = items.reduce((hitung, { kategori }) => ({ ...hitung, [kategori]: (hitung[kategori] ?? 0) + 1 }), {})
+
   return (
     <section>
       <h1>Statistik</h1>
@@ -10,26 +15,12 @@ export default function Statistik() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Komputer</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>Perangkat Output</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Perangkat Input</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>Jaringan</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>Kelistrikan</td>
-            <td>1</td>
-          </tr>
+          {Object.entries(perKategori).map(([kategori, jumlah]) => (
+            <tr key={kategori}>
+              <td>{kategori}</td>
+              <td>{jumlah}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </section>
