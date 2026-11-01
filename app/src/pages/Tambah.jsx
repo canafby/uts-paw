@@ -19,6 +19,7 @@ export default function Tambah() {
       setGalat('Judul wajib diisi, minimal 3 karakter.')
       return
     }
+    setGalat('')
     tambah({ ...form, judul: form.judul.trim() })
     navigate('/koleksi')
 }
@@ -29,7 +30,7 @@ export default function Tambah() {
 
       <label htmlFor="judul">Judul</label>
       <input id="judul" name="judul" value={form.judul} onChange={ubah} />
-      {galat && <p style={{ color: 'red' }}>{galat}</p>}
+      {galat && <p role="alert">{galat}</p>}
       <label htmlFor="kodeAlat">Kode Barang</label>
       <input id="kodeAlat" name="kodeAlat" value={form.kodeAlat} onChange={ubah} />
       <label htmlFor="kategori">Kategori</label>
