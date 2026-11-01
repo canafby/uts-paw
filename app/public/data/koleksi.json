@@ -1,14 +1,14 @@
-[
-  { "id": "1", "judul": "Mikroskop Binokuler", "kategori": "Optik", "kodeAlat": "OPT-001", "jumlah": 12, "kondisi": "Baik" },
-  { "id": "2", "judul": "Osiloskop Digital", "kategori": "Elektronika", "kodeAlat": "ELK-014", "jumlah": 6, "kondisi": "Baik" },
-  { "id": "3", "judul": "Multimeter Analog", "kategori": "Elektronika", "kodeAlat": "ELK-021", "jumlah": 15, "kondisi": "Rusak Ringan" },
-  { "id": "4", "judul": "Neraca Analitik", "kategori": "Pengukuran", "kodeAlat": "UKR-003", "jumlah": 4, "kondisi": "Baik" },
-  { "id": "5", "judul": "Gelas Ukur 100 ml", "kategori": "Gelas", "kodeAlat": "GLS-010", "jumlah": 30, "kondisi": "Baik" },
-  { "id": "6", "judul": "Labu Erlenmeyer", "kategori": "Gelas", "kodeAlat": "GLS-017", "jumlah": 25, "kondisi": "Baik" },
-  { "id": "7", "judul": "Spektrofotometer UV", "kategori": "Optik", "kodeAlat": "OPT-009", "jumlah": 2, "kondisi": "Perawatan" },
-  { "id": "8", "judul": "Sentrifuge Mini", "kategori": "Peralatan Umum", "kodeAlat": "UMM-005", "jumlah": 3, "kondisi": "Baik" },
-  { "id": "9", "judul": "Pengaduk Magnetik", "kategori": "Pemanas", "kodeAlat": "PMN-002", "jumlah": 8, "kondisi": "Rusak Ringan" },
-  { "id": "10", "judul": "Catu Daya DC", "kategori": "Elektronika", "kodeAlat": "ELK-030", "jumlah": 10, "kondisi": "Baik" },
-  { "id": "11", "judul": "Pembakar Bunsen", "kategori": "Pemanas", "kodeAlat": "PMN-011", "jumlah": 18, "kondisi": "Rusak Berat" },
-  { "id": "12", "judul": "Jangka Sorong Digital", "kategori": "Pengukuran", "kodeAlat": "UKR-012", "jumlah": 9, "kondisi": "Baik" }
+  [
+  { "id": "1", "judul": "Komputer Desktop", "kategori": "Komputer", "kodeAlat": "KOM-001", "jumlah": 30, "kondisi": "Baik" },
+  { "id": "2", "judul": "Monitor LED 24 Inch", "kategori": "Perangkat Output", "kodeAlat": "OUT-014", "jumlah": 30, "kondisi": "Baik" },
+  { "id": "3", "judul": "Keyboard Mechanical", "kategori": "Perangkat Input", "kodeAlat": "INP-021", "jumlah": 30, "kondisi": "Baik" },
+  { "id": "4", "judul": "Mouse Optical", "kategori": "Perangkat Input", "kodeAlat": "INP-003", "jumlah": 30, "kondisi": "Baik" },
+  { "id": "5", "judul": "Printer LaserJet", "kategori": "Perangkat Output", "kodeAlat": "OUT-010", "jumlah": 3, "kondisi": "Baik" },
+  { "id": "6", "judul": "Proyektor LCD", "kategori": "Perangkat Output", "kodeAlat": "OUT-017", "jumlah": 2, "kondisi": "Baik" },
+  { "id": "7", "judul": "Router Wireless", "kategori": "Jaringan", "kodeAlat": "NET-009", "jumlah": 4, "kondisi": "Baik" },
+  { "id": "8", "judul": "Switch Network 24 Port", "kategori": "Jaringan", "kodeAlat": "NET-005", "jumlah": 3, "kondisi": "Baik" },
+  { "id": "9", "judul": "Access Point", "kategori": "Jaringan", "kodeAlat": "NET-002", "jumlah": 5, "kondisi": "Rusak Ringan" },
+  { "id": "10", "judul": "UPS (Uninterruptible Power Supply)", "kategori": "Kelistrikan", "kodeAlat": "LST-030", "jumlah": 10, "kondisi": "Baik" },
+  { "id": "11", "judul": "Kabel LAN UTP", "kategori": "Jaringan", "kodeAlat": "NET-011", "jumlah": 20, "kondisi": "Rusak Berat" },
+  { "id": "12", "judul": "Server Rack", "kategori": "Komputer", "kodeAlat": "KOM-012", "jumlah": 1, "kondisi": "Perawatan" }
 ]
