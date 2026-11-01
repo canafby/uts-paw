@@ -1,14 +1,19 @@
+import { useState } from 'react'
+const AWAL = { judul: '', kategori: 'Komputer', kodeAlat: '', jumlah: 0, kondisi: 'Baik' }
+
 export default function Tambah() {
+    const [form, setForm] = useState(AWAL)
+    const ubah = (e) => setForm({ ...form, [e.target.name]: e.target.value })
   return (
     <form>
       <h1>Tambah Barang</h1>
 
       <label htmlFor="judul">Judul</label>
-      <input id="judul" name="judul" />
+      <input id="judul" name="judul" value={form.judul} onChange={ubah} />
       <label htmlFor="kodeAlat">Kode Barang</label>
-      <input id="kodeAlat" name="kodeAlat" />
+      <input id="kodeAlat" name="kodeAlat" value={form.kodeAlat} onChange={ubah} />
       <label htmlFor="kategori">Kategori</label>
-      <select id="kategori" name="kategori">
+      <select id="kategori" name="kategori" value={form.kategori} onChange={ubah}>
         <option>Komputer</option>
         <option>Perangkat Output</option>
         <option>Perangkat Input</option>
@@ -16,9 +21,9 @@ export default function Tambah() {
         <option>Kelistrikan</option>
       </select>
       <label htmlFor="jumlah">Jumlah Barang</label>
-      <input id="jumlah" name="jumlah" type="number" />
+      <input id="jumlah" name="jumlah" type="number" value={form.jumlah} onChange={ubah} />
       <label htmlFor="kondisi">Kondisi Barang</label>
-      <select id="kondisi" name="kondisi">
+      <select id="kondisi" name="kondisi" value={form.kondisi} onChange={ubah}>
         <option>Baik</option>
         <option>Rusak Ringan</option>
         <option>Rusak Berat</option>
@@ -26,6 +31,7 @@ export default function Tambah() {
       </select>
 
       <button type="submit">Simpan</button>
+      <p>Data yang diinputkan: {JSON.stringify(form)}</p>
     </form>
   )
 }
